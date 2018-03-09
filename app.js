@@ -59,14 +59,16 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   // sum of three numbers
-  sum(a, b);
-
+  function sumTwo(a, b, c){
+    var twoSum = sum(a, b)[0];
+    return newAnswer = sum(twoSum, c)[0];
+  }
   // product of three numbers
 
   // third element, sum of three numbers
-  var sumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumNumb + ',';
+
   // fourth element, product of three numbers
-  var multString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiNumb + '.';
+
   // Return array
   return [sumNumb, multiNumb, sumString, multString];
 }
